@@ -1,0 +1,14 @@
+# syntax=docker/dockerfile:1
+
+FROM node:16
+USER root
+RUN npm install -g @vue/cli
+
+RUN useradd -s /bin/bash -m vscode \
+ && groupadd docker \
+ && usermod -aG docker vscode
+
+USER vscode
+
+
+EXPOSE 8000
