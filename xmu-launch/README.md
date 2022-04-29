@@ -20,5 +20,10 @@ yarn build
 yarn lint
 ```
 
+### 部署到xmu-maker.cn
+``` 
+yarn deploy
+```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
